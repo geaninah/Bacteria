@@ -10,7 +10,7 @@ public class Bacteria
 {
     static List<int[]> getNeighbors(int[] bacteria)
     {
-        List<int[]> neighbors = new ArrayList<int[]>();
+        List<int[]> neighbors = new ArrayList<>();
 
         // Neighbors previous row
         neighbors.add(new int[] {bacteria[0] - 1, bacteria[1] - 1});
@@ -62,7 +62,7 @@ public class Bacteria
 
     static List<int[]> getNextGeneration(List<int[]> bacteria)
     {
-        List<int[]> nextGeneration = new ArrayList<int[]>();
+        List<int[]> nextGeneration = new ArrayList<>();
 
         for(int[] currentBacteria : bacteria)
         {
@@ -115,7 +115,7 @@ public class Bacteria
             input = new BufferedReader(new FileReader(args[0]));
             output = new PrintWriter(new FileWriter(args[1]));
 
-            List<int[]> bacteria = new ArrayList<int[]>();
+            List<int[]> bacteria = new ArrayList<>();
             String currentLine;
 
             // Read lines from textfile
