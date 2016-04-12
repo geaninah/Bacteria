@@ -3,5 +3,5 @@
 Running the program(after compilation):
 
 ```
-java inputFile outputFile
+java Bacteria inputFile outputFile
 ```
